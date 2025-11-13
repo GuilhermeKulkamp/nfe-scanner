@@ -1,0 +1,39 @@
+{
+    // Configurações gerais do Python
+    "python.defaultInterpreterPath": "python3.12",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    // Configurações do Black (Formatador)
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "black-formatter.args": [
+        "--line-length",
+        "88"
+    ],
+    // Configurações do isort (Organizador de Imports)
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    // Configurações do Ruff (Linter)
+    "ruff.args": [
+        "--line-length",
+        "88"
+    ],
+    "ruff.lint.args": [
+        "--fix"
+    ],
+    "ruff.lint.run": "onSave",
+    "ruff.organizeImports": false, // Deixa o isort cuidar disso
+    // Configurações do Co-Pilot (Opcional, mas mencionado no contexto)
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true
+    }
+}

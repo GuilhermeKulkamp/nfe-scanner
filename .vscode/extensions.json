@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "charliermarsh.ruff",
+        "tamasfe.even-better-toml",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "hbenl.vscode-test-explorer"
+    ]
+}
